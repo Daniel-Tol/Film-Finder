@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b574ad34bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="title-div">
+        <h1 id="title">Film Finder</h1>
+      </div>
+      <nav>
+        <ul id="nav-bar">
+          <li>
+            <input
+              type="radio"
+              id="latest-movies"
+              name="filter"
+              class="btn"
+              value="latest-movies"
+            />
+            <label for="latest-movies" class="btn">New Movies</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="avengers"
+              name="filter"
+              class="btn"
+              value="avenger"
+            />
+            <label for="avengers" class="btn">Avengers</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="x-men"
+              name="filter"
+              class="btn"
+              value="x-men"
+            />
+            <label for="x-men" class="btn">X-Men</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="princess"
+              name="filter"
+              class="btn"
+              value="princess"
+            />
+            <label for="princess" class="btn">Princess</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="batman"
+              name="filter"
+              class="btn"
+              value="batman"
+            />
+            <label for="batman" class="btn">Batman</label>
+          </li>
+          <li>
+            <input type="text" id="search-box" placeholder="Search movies.." />
+            <button id="search-btn" class="btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main><ul id="movie-list"></ul></main>
+    <script src="movie-database.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
